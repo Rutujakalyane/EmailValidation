@@ -1,14 +1,14 @@
-function firstpart()
+function emailRegex()
 {
 echo "Enter : "
 read word
 
-firstword="^[a-zA-Z0-9]{2}$"
-if [[ $word =~ $firstword ]]
+emailPattern1="^[a-zA-Z0-9]{2}$"
+if [[ $word =~ $emailPattern1 ]]
 then 
         echo valid;
 else
         echo "invalid"
 fi
 }
-firstpart
+emailRegex
