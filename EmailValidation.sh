@@ -3,8 +3,8 @@ function emailRegex()
 echo "Enter : "
 read word
 
-emailPattern3="^[.][a-zA-Z]{2,4}$"
-if [[ $word =~ $emailPattern3 ]]
+OptionalPart1="([.+,-,_]?[a-zA-Z0-9]+)$"
+if [[ $word =~ $OptionalPart1 ]]
 then 
         echo valid;
 else
